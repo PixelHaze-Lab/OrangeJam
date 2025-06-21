@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="旅行,プレゼント,アジア">
+<meta name="description" content="台湾、香港、バリ。美味しいアジアの旅をプレゼント！">
+<title>アジアの旅プレゼント</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="favicon.ico" rel="icon">
+</head>
+<body>
+<div id="container">
+<header>
+<div id="headerBox">
+<h1>OrangeJam Travel</h1>
+<h3>東南アジアの旅</h3>
+<h2><img src="images/orange.png" alt="OrangeJam"></h2>
+</div>
+<img src="images/mainvisual02.jpg" alt="プルメリア">
+
+<!--nav-->
+<nav>
+<ul>
+<li><a href="index.html">Top</a></li>
+<li><a href="#">アジアンSpot</a></li>
+<li><a href="entry.html">プレゼント応募フォーム</a></li>
+<li><a href="#">会社案内</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="entry">
+
+<h2>プレゼント応募</h2>
+
+<form action="present.php" method="post">
+
+<table>
+<tr>
+<th>応募する旅</th>
+<td>
+<input type="radio" name="present" id="bali"><label for="bali">バリ島</label>
+<input type="radio" name="present" id="taiwan"><label for="taiwan">台湾</label>
+<input type="radio" name="present" id="hongkong"><label for="hongkong">香港</label>
+</td>
+</tr>
+<tr>
+<th>お名前</th>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<th>性別</th>
+<td>
+<input type="radio" name="sex" value="man" id="man"><label for="man">男性</label>
+<input type="radio" name="sex" value="woman" id="woman"><label for="woman">女性</label>
+</td>
+</tr>
+<tr>
+<th>メールアドレス</th>
+<td><input type="email" name="mail"></td>
+</tr>
+<tr>
+<th>このサイトをどこで知りましたか？</th>
+<td>
+<input type="checkbox" id="search" name="media"><label for="search">検索サイト</label>
+<input type="checkbox" id="magazine" name="media"><label for="magazine">雑誌</label>
+<input type="checkbox" id="friend" name="media"><label for="friend">友達の紹介</label>
+<input type="checkbox" id="other" name="media"><label for="other">その他</label>
+</td>
+</tr>
+<tr>
+<th>ご意見ご感想</th>
+<td><textarea name="comment">このサイトに対するご意見をお書きください</textarea></td>
+</tr>
+</table>
+<p><input type="submit"></p>
+</form>
+ </section>
+<footer>
+<!--footer-->
+<div id="footerBox">
+<ul>
+<li><a href="#">プライバシーポリシー</a></li>
+<li><a href="#">会社案内</a></li>
+<li><a href="#">お問合わせ</a></li>
+<li><a href="#">このサイトについて</a></li>
+</ul>
+<p>&copy; OrangeJam Travel. All Right Reserved. 2016</p>
+</div>
+</footer>
+</div><!--/container-->
+</body>
+</html>
