@@ -1,0 +1,825 @@
+/* ===========Orange-jam ResponsiveCSS ============ */
+@charset "utf-8";
+html {
+    font-size: 1rem; 
+}
+
+body{
+	font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic, "メイリオ", Meiryo, sans-serif;
+	background-color:#FAF8F5;
+}
+img, video {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	vertical-align: bottom;
+}
+h2 {
+    font-size: 2.2rem; 
+	  text-align: center;
+    margin: 3rem 0 1.5rem; 
+	  padding: 1rem;
+    letter-spacing: 0.1em; 
+    font-weight: bold; 
+	  font-family: 'Playfair Display', serif; 
+	  color: #C96F4A;
+	  border-bottom: 2px solid #ff682c;
+}
+h3 {
+    text-align: center;
+    font-size: 1.2rem; 
+    color: #2F2F2F; 
+    letter-spacing: 0.1em; 
+    line-height: 1.2;
+    font-weight: 500;
+	  font-family: 'Poppins', sans-serif; 
+	  margin-bottom: 1rem;
+}
+
+ h4 { 
+    font-size: 1.1rem; 
+    color: #2F2F2F; 
+    letter-spacing: 0.1em; 
+    line-height: 1.1;
+    font-weight: 400;
+	  font-family: 'Poppins', sans-serif; 
+	  margin-bottom: 1rem; 
+}
+p {
+    font-size: 1rem;
+    line-height: 1.8; 
+    margin-bottom: 1rem;
+    color: #2F2F2F; 
+}
+a {
+    color: #FFF; 
+    text-decoration: none;
+}
+a:hover{
+     color: #FFFFFF; 
+    opacity: 0.8;
+}
+/* ===========hearder CSS ============ */
+#container {
+	margin: 0 auto;
+	max-width:1100px;	
+}
+header {
+	max-width:1100px;
+	padding-top: 20px;
+	
+}
+.headerBox { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%;
+    font-family: serif;
+    font-style: italic;
+}
+header h1 {
+    padding-top: 20px;
+	font-size: 2.3rem;
+	font-weight: bold;
+	color: #F79F60;
+	margin-right: auto;
+}
+
+header .inside2 img{
+     width: 100px;
+     height: auto;
+	 margin-left: auto;
+}
+.hero img{
+	width:100%;
+    margin:0 auto;
+	
+}
+nav {
+	width: 100%;
+	margin: 10px auto;
+	background: #F79F60;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	position: relative;
+	width: calc(100%/6);
+	text-align: center;
+	border-right: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	flex-grow: 1; 
+}
+nav ul li:last-child {
+	border-right: none;
+}
+nav ul li a {
+	display: block;
+	font-size: 1rem;
+	line-height: 2em;
+}
+nav ul li a:hover {
+	width: 100%;
+	background-color: #E67838;
+}
+/* =================slider================= */
+.bx-wrapper {
+    margin: 0 auto; 
+    max-width: 100%; 
+}
+.bx-wrapper img {
+    margin: 0 auto; 
+    display: block;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4); 
+}
+
+/* PAGER */
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+  margin:auto;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(../images/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(../images/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+
+/* ==========footer  CSS ============ */
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 30px;
+	padding-top: 3rem;
+	width: 100%;
+	border-top: 1px dotted #666;
+}
+footer p {
+	margin-left: 2%;
+	font-size: 0.9rem;
+	align-self: center;
+	color:#2F2F2F; 
+}
+footer #linkArea {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 30%;
+}
+footer li {
+	font-size: 0.95rem;
+	line-height: 1.2;
+}
+footer li a {
+	color: #2F2F2F; 
+}
+footer li a:hover {
+	color: orange;
+}
+
+/* ==========catch  CSS ============ */
+#catch{
+	max-width: 900px; 
+	background: #fdc49a;
+	border-radius: 8px;
+	padding:0.6rem;
+	margin:1rem auto;
+}
+#catch p{
+	text-align: center;
+	font: #000;
+}
+/* ==========about  CSS ============ */
+.about img{
+	width:100%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+	margin-bottom: 0.8rem;
+
+}
+/* ==========Product  CSS ============ */
+.product {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.product div { 
+    flex-basis: calc(33.33% - 20px); 
+    max-width: 330px; 
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+    padding: 1.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+	box-shadow: 3px 3px 5px rgba(78, 78, 78, 0.5);
+}
+
+.product img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin-bottom: 10px;
+}
+/* ==========article/section  CSS ============ */
+.present { 
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 10px; 
+}
+.present section {
+    width: 30%; 
+    min-width: 300px; 
+    box-sizing: border-box; 
+}
+.present h3{
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-top: 1.2rem;
+	color:#C96F4A;
+}
+.present h4{
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 1rem;
+	color:#504f4f;
+	text-align: center;
+}
+.present figcaption {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+/* ==========Pickups  CSS ============ */
+#country {
+	margin-bottom: 1rem;
+}
+#country ul {
+  display: grid; 
+  grid-template-columns: repeat(6, 1fr); 
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; 
+  max-width: 1000px; 
+}
+#country li {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: #FFF;
+}
+
+/* ============予約・申し込み方法の案内=============== */
+#reservation {
+  background-color: #fff7e6; 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+#reservation ol {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+}
+#reservation li {
+  counter-increment: step;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  position: relative;
+}
+#reservation li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #e36c00;
+  color: white;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+
+/* ==============staff ==================== */
+
+.staff {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+
+.staff-group img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.staff-member {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.staff-member h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.staff-message, .staff-area {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.staff-message {
+  font-weight: bold;
+  color: #ff6600;
+}
+/* ==============review=================== */
+.reviews{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.reviews div { 
+    flex-basis: calc(33.33% - 20px); 
+    max-width: 330px; 
+    height: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+	  box-shadow: 3px 3px 5px rgba(78, 78, 78, 0.5);
+}
+.reviews　img{
+    max-width: 100%; 
+    height: 300px;
+    display: block; 
+    margin-bottom: 10px;
+}
+/* ===============News==================== */
+#news{
+    margin: auto;
+    padding:1.5rem;
+    margin: 20px;
+    background: #f7e5d9;
+	border-radius: 8px;
+    box-sizing: border-box;
+}
+#news dl {
+    padding-left: 1rem; 
+	margin-bottom: 1rem; 
+	box-shadow: 3px 3px 5px rgba(78, 78, 78, 0.4);
+}
+#news dt{
+    font-weight: bold;
+    font-size: 1.2rem; 
+    margin-top: 1rem; 
+	padding: 1rem;
+    color: #444;
+	border-bottom: 1px dotted #f39069;
+}
+#news dd{
+    line-height: 1.6; 
+	padding: 1rem;
+	border-bottom: 1px dotted #F79F60;
+	}
+#news dt::before {
+    content: "■ "; 
+    color: #f39069; 
+    margin-right: 0.5em;
+    font-size: 0.9em; 
+    vertical-align: middle; 
+}	
+/* ==========inquiry ============ */
+.inquiry {
+    text-align: center;
+    margin: 1rem auto; 
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.contact-buttons{
+  display: flex;
+  justify-content: space-around; 
+}	
+/* = button08ボタン = */
+.button08 {
+    display: inline-block; 
+    background:#f39069 ; 
+    color: #FFF; 
+    border-radius: 8px; 
+    padding: 1rem 3rem; 
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 5px 0 #C96F4A; 
+    margin: 1.5rem auto;
+}
+.button08:hover {
+    background: #f54702; 
+    transform: translateY(2px); 
+}
+/* ==========Bali page ============ */
+.hero {
+  background-image: url(../images/bali-hero02.jpg);
+  background-repeat: no-repeat;
+  height: 100vh; 
+  background-size: contain;
+  color: #fff;
+  text-align: left; 
+   display: flex;
+  flex-direction: column; 
+  align-items: flex-start; /* 水平方向の開始位置（左端）に揃える */
+  justify-content: flex-end;
+}
+.hero-text {
+  background-color: #f8cd7c;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem; 
+  text-align: left; 
+}
+.hero-text h1{
+	text-align: center;
+	font-size: 1.3rem;
+	margin:0.5rem;
+}
+.hero-text .catch{
+	text-align: center;
+	font-size: 1.1rem;
+	color:#FFF;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem; 
+  margin: 1rem;
+}
+
+.btn-orange {
+  background: #f7941d;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  
+}
+.about-bali img{
+	max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4); 
+}
+
+/* ==========recommend section ============ */
+#recommend {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 0.8rem 0 0.5rem;
+}
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: left;
+}
+/* ==========contact Page ============ */
+.contact img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ==========Form CSS============ */
+#formWrap {
+	width:700px;
+	margin:0 auto;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+}
+table.formTable{
+	width:100%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+table.formTable td,table.formTable th{
+	border:1px solid #ccc;
+	padding:10px;
+}
+table.formTable th{
+	width:30%;
+	font-weight:normal;
+	background:#efefef;
+	text-align:left;
+}
+/*　簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい）　*/
+@media screen and (max-width:572px) {
+#formWrap {
+	width:95%;
+	margin:0 auto;
+}
+table.formTable th, table.formTable td {
+	width:auto;
+	display:block;
+}
+table.formTable th {
+	margin-top:5px;
+	border-bottom:0;
+}
+form input[type="text"], form textarea {
+	width:80%;
+	padding:5px;
+	font-size:110%;
+	display:block;
+}
+form input[type="submit"], form input[type="reset"], form input[type="button"] {
+	display:block;
+	width:100%;
+	height:40px;
+}
+}
+/* ==========update page  ============ */
+.update{
+    margin: auto;
+    padding:1.5rem;
+    margin: 20px;
+    background: #f7e5d9;
+	border-radius: 8px;
+    box-sizing: border-box;
+}
+.update dt::before {
+    content: "■ "; 
+    color: #f39069; 
+    margin-right: 0.5em;
+    font-size: 0.9em; 
+    vertical-align: middle; 
+}
+.update dl {
+    padding-left: 1rem; 
+	margin-bottom: 1rem; 
+	box-shadow: 3px 3px 5px rgba(78, 78, 78, 0.4);
+}
+.update dt{
+    font-weight: bold;
+    font-size: 1.2rem; 
+    margin-top: 1rem; 
+	  padding: 1rem;
+    color: #444;
+	  border-bottom: 1px dotted #f39069;
+}
+.update dd{
+    line-height: 1.6; 
+	  padding: 1rem;
+	  border-bottom: 1px dotted #F79F60;
+	}
+
+.update	img{
+	max-width: 90%;
+  height: 530px;
+  display: block
+	margin: 0 auto;
+  padding:1rem;
+}
+/* ==========Go back to Top  CSS ============ */
+#page-top { 
+    position: fixed; 
+    bottom: 20px;    
+    right: 20px;     
+    z-index: 1000;   
+    text-decoration: none; 
+}
+
+#page-top:hover {
+    opacity: 1; 
+}
+
+#page-top img {
+    width: 100px; 
+    height: auto;
+	
+}
+/* ==========company-profile ============ */
+.company-profile {
+  max-width: 800px;
+  margin:0 auto;
+  padding: 0 20px;
+  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+.company-profile img {
+  width: 80%; 
+  margin: 0 auto; 
+  display: block; 
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdf9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 1rem;
+}
+
+.company-table th,
+.company-table td {
+  border: 1px solid #f2d4b5;
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.company-table th {
+  width: 30%;
+  background-color: #fff3e5;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.company-table td {
+  background-color: #ffffff;
+}
+
+.company-table a {
+  color: #e66a00;
+  text-decoration: underline;
+}
+.map-container iframe {
+  display: block; 
+  margin: 0 auto; 
+  max-width: 100%; 
+}
+
+
+/* ==========company-profile ============ */
+.company-profile {
+  max-width: 800px;
+  margin:0 auto;
+  padding: 0 20px;
+  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+.company-profile img {
+  width: 80%; 
+  margin: 0 auto; 
+  display: block; 
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========site-concept ============ */
+.site-concept img{
+  width:100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.site-concept {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdf9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 1rem;
+}
+
+.site-concept th,
+.site-concept td {
+  border: 1px solid #f2d4b5;
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.site-concept th {
+  width: 30%;
+  background-color: #fff3e5;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.site-concept td {
+  background-color: #ffffff;
+}
+
+.site-concept a {
+  color: #e66a00;
+  text-decoration: underline;
+}
+
+
+
+
